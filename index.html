@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #ffffff;
+            --primary-color: #000000;
             --accent-color: #aa6cce;
             --bg-color: #fdfbf7;
             --card-bg: #ffffff;
@@ -144,7 +144,7 @@
 
         .dish-desc {
             font-size: 14px;
-            color: #666;
+            color: #4a4a4a;
             font-weight: 300;
             line-height: 1.4;
         }
@@ -454,7 +454,7 @@
 
 
         <!-- קינוחים -->
-        <h2 id="desserts" class="category-header">קינוחים</h2>
+        <h2 id="dessert" class="category-header">קינוחים</h2>
         <div class="dish-card" onclick="askChef('מוצי','א')">
             <div class="dish-name"><i class="fa-solid fa-leaf veggie-icon"></i> מוצ'י<i class="fa-solid fa-sparkles sparkle-icon"></i></div>
             <div class="dish-desc">2 יחידות מוצ'י עבודת יד - וניל</div>
@@ -599,7 +599,7 @@
 
             } catch (error) {
                 console.error(error);
-                modalBody.innerHTML = `<p style="color:#ffffff">רעבים? תזמינו מהאתר ושליחשון יגיע אליכם במהרה!</p>`;
+                modalBody.innerHTML = `<p style="color:#000000">רעבים? תזמינו מהאתר ושליחשון יגיע אליכם במהרה!</p>`;
             }
         }
 
@@ -666,7 +666,7 @@ ${orderItems.map(item => `• ${item}`).join('\n')}
 תודה ובהצלחה!`;
 
             const encodedMessage = encodeURIComponent(message);
-            const whatsappUrl = `https://wa.me/972548055088?text=${encodedMessage}`;
+            const whatsappUrl = `https://wa.me/972546865858?text=${encodedMessage}`;
             
             window.open(whatsappUrl, '_blank');
         }
